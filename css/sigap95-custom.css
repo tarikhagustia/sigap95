@@ -1,0 +1,50 @@
+hr.footer-divided {
+	border-width: 0.5em;
+	border-color: black;
+}
+.crausel-kalan {
+	background-color: red;
+	position: absolute;
+	font-size: 25px;
+	bottom: 10px;	
+	left: 15px;
+	color: black;
+	padding: 10px;
+	border-color: none;
+	font-weight: bold;
+}
+.news-popular {
+	padding: 10px 5px 0px 5px;
+	background-color: #bdb9b9;
+}
+.news-popular h4 {
+	color: white;
+}
+.news-popular p {
+	color: black;
+}
+.news-popular li {
+	border-bottom: 1px solid black !important;	
+}
+.judul-konten {
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	background-color: red;
+	width: 100%;
+}
+.judul-feed {
+	background-color: #d4d2d2;
+	padding: 10px;
+	font-size: 25px;
+	color: red;
+	font-weight: bolder;
+}
+.news-feed {
+	padding: 10px 5px 5px 5px;
+	background :linear-gradient(red, black);
+}
+.news-feed h4, .news-feed p {
+	color: white;
+}
