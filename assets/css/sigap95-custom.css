@@ -6,7 +6,7 @@ hr.footer-divided {
 	background-color: red;
 	position: absolute;
 	font-size: 25px;
-	bottom: 10px;	
+	bottom: 10px;
 	left: 15px;
 	color: black;
 	padding: 10px;
@@ -24,7 +24,7 @@ hr.footer-divided {
 	color: black;
 }
 .news-popular li {
-	border-bottom: 1px solid black !important;	
+	border-bottom: 1px solid black !important;
 }
 .judul-konten {
 	padding: 5px;
@@ -41,10 +41,32 @@ hr.footer-divided {
 	color: red;
 	font-weight: bolder;
 }
+.judul-lalin {
+	background-color: black;
+	padding: 10px;
+	font-size: 25px;
+	color: red;
+	font-weight: bolder;
+}
 .news-feed {
 	padding: 10px 5px 5px 5px;
 	background :linear-gradient(red, black);
+	height: 590px;
+	overflow-y: auto;
 }
 .news-feed h4, .news-feed p {
 	color: white;
+}
+.twitter-widget {
+	border-bottom: 1px solid black;
+}
+.kanal-title-home {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	background-color: red;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	padding: 5px 15px 5px 5px;
 }

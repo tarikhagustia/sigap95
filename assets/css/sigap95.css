@@ -1,144 +1,9 @@
-/*
-#d6d6d6
-[Master Stylesheet]
-
-Project: GLOBALNEWS - News & magazine theme 
-Version: 1.0
-Author : Webyzona.com
-
-[Table of contents]
-
-1. GENERAL STYLES
-   - 1-1 PRELOADER
-   - 1-2 STYLE SWITCHER
-   - 1-3 GO TO TOP
-   - 1-4 ANY TOPIC TITLE
-   - 1-5 PAGINATION
-   - 1-6 BREADCRUMB
-   - 1-7 SUB INFO
-   - 1-8 MODAL BOX
-   
-2. TYPOGRAPHY
-   - 2-1 LINKS
-   - 2-2 HEADERS
-   - 2-3 MISC
-
-3. LAYOUT
-   - 3.1 GRID
-   - 3.2 PAGE HEADER
-
-4. HEADER
-   - 4-1 HEADER TOOL BAR
-   - 4-2 TIME AND DATE
-   - 4-3 WEATHER
-   - 4-4 SITE LOGO
-   
-5. NAVIGATION
-   - 5-1 PARENT NAVIGATION
-   - 5-2 CHILD NAVIGATION
-   
-6. SEARCH
-
-7. HOT NEWS
-	
-8. BANNER AND OWL CAROUSEL
-	- 8-1 OWL CAROUSEL PROGRESS BAR
-	- 8-2 OWL CAROUSEL CONTROLS
-    - 8-2 OVERLAY ON IMAGES
-	- 8-2 OWL CAROUSEL SYNC
-	
-9. LEFT COLUMN
-	- 9-1 BUSINESS SECTION
-	- 9-2 SCIENCE AND TRAVEL
-    - 9-3 LIFE STYLE
-	- 9-4 RECENT VIDEOS
-	- 9-5 MASONRY
-	- 9-6 AUTHOR
-	- 9-7 COMMENTS
-	- 9-8 FAQs
-	- 9-9 CONTACT
-	-9-10 HOME-2
-	
-10-MID COLUMN
-
-11.RIGHT COLUMN
-	- 11-1 ADVERTISEMENT AREA (336PX*280PX)
-	- 11-2 SOCIAL COUNTERS
-	- 11-3 TABS
-	- 11-4 CALENDAR
-
-12.FOOTER
-13.404 PAGE
-14-MEDIA QUERIES
-
-*/
 
 /*------------------------------------*\
     1-GENERAL STYLES
 \*------------------------------------*/
 
-/*1-1 PRELOADER*/
 
-#preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fdfdfd; /* change if the mask should have another color */
-	z-index: 3000; /* makes sure it stays on top */
-}
-#status {
-	width: 200px;
-	height: 150px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	background-image: url(../images/general/status-red.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: -100px 0 0 -100px;
-}
-/*1-2 STYLE SWITCHER*/
-.switcher {
-	width: 45px;
-	padding: 10px 10px 5px 8px;
-	position: fixed;
-	z-index: 2000;
-	top: 300px;
-	background-color: #fff;
-	border: 1px solid #ededed;
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	color: #fff;
-}
-.switcher #switch-panel {
-	position: absolute;
-	right: -40px;
-	top: 0;
-	width: 40px;
-	height: 40px;
-	z-index: 1990;
-	display: block;
-	background-color: #e74c3c;
-	margin-left: 0;
-	cursor: pointer;
-	text-align: center;
-}
-.switcher #switch-panel i {
-	font-size: 25px;
-	line-height: 40px;
-	color: #fff;
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	-webkit-animation: spin 4s linear infinite;
-	-moz-animation: spin 4s linear infinite;
-	animation: spin 4s linear infinite;
-}
  @-moz-keyframes spin {
 100% {
 -moz-transform: rotate(360deg);
@@ -188,14 +53,6 @@ transform:rotate(360deg);
 }
 /*1-3 GO TO TOP*/
 
-#scrollUp {
-	background-color: #e74c3c;
-	background-image: url("../images/general/top-red.png");
-	bottom: 20px;
-	right: 20px;
-	width: 38px;    /* Width of image */
-	height: 38px;   /* Height of image */
-}
 /*1-4 ANY TOPIC TITLE*/
 .main-title-outer {
 	border-bottom: 1px solid #ededed;
@@ -366,7 +223,7 @@ p {
 /*2-2 HEADERS*/
 h1 {
 	font-size: 24px;
-	color: #e74c3c;
+	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0;
@@ -374,26 +231,26 @@ h1 {
 }
 h2 {
 	font-size: 22px;
-	color: #3d566e;
+	color: #000000;
 	font-weight: bold;
 }
 h3 {
 	font-size: 20px;
-	color: #3d566e;
+	color: #000000;
 	font-weight: bold;
 }
 h4 {
-	color: #3d566e;
+	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
 }
 h5 {
-	color: #3d566e;
+	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
 }
 h6 {
-	color: #3d566e;
+	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -1110,10 +967,10 @@ none;
 	overflow: hidden;
 }
 .box img {
-	
+
 }
 .box:hover img {
-	
+
 }
 .match-height {
 	max-height: 434px;

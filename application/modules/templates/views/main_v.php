@@ -97,14 +97,14 @@
           <div class="box item">
             <a href="#">
               <div class="carousel-caption">Buronan Perampokan Ini Ditembak Setelah Berusaha Tabrak Polisi Di Sukabumi</div>
-                <img class="img-responsive" href="/assets/images/article/polisi.png" width="1600" height="972" alt=""/>
+                <img class="img-responsive" src="/assets/images/article/polisi.png" width="1600" height="972" alt=""/>
               <div class="crausel-kalan">SIGAP 24 Jam</div>
             </a>
           </div>
           <div class="box item">
             <a href="#">
               <div class="carousel-caption">Buronan Perampokan Ini Ditembak Setelah Berusaha Tabrak Polisi Di Sukabumi</div>
-                <img class="img-responsive" href="/assets/images/article/polisi.png" width="1600" height="972" alt=""/>
+                <img class="img-responsive" src="/assets/images/article/polisi.png" width="1600" height="972" alt=""/>
             </a>
           </div>
         </div>
@@ -171,59 +171,85 @@
                 <div class="col-sm-16">
                   <div class="news-feed">
                     <ul class="list-unstyled top-bordered ex-top-padding">
-                    <li>
-                      <a href="#">
-                        <div class="row">
-                          <div class="col-lg-7 col-md-4 col-xs-7">
-                            <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                          <div class="col-lg-9 col-md-12 col-xs-9">
-                             <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
-                              <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="row">
-                          <div class="col-lg-7 col-md-4 col-xs-7">
-                            <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                          <div class="col-lg-9 col-md-12 col-xs-9">
-                             <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
-                              <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="row">
-                          <div class="col-lg-7 col-md-4 col-xs-7">
-                            <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                          <div class="col-lg-9 col-md-12 col-xs-9">
-                             <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
-                              <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-lg-7 col-md-4 col-xs-7">
+                              <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-xs-9">
+                               <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
+                                <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="row">
-                          <div class="col-lg-7 col-md-4 col-xs-7">
-                            <img alt="" src="/assets/images/article/polisi.png" class="img-thumbnail pull-left">
-                          </div>
-                          <div class="col-lg-9 col-md-12 col-xs-9">
-                             <h4>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar</h4>
-                              <p>Tim Cyber Polres Sukabumi Gagalkan Tawuran Pelajar,</p>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                        </a>
+                      </li>
+                    </ul>
                 </div>
                 </div>
                 <div class="col-sm-16">
@@ -239,9 +265,155 @@
       	<img src="/assets/images/banner/lantas.png" class="img-responsive" />
       	<div class="row">
           <div class="col-sm-16">
-           <a class="twitter-timeline" href="https://twitter.com/polressukabumi">Tweets by polressukabumi</a>
+            <div class="judul-lalin text-center">
+              Sigap Lalu Lintas
+            </div>
+            <div class="twitter-widget">
+              <a class="twitter-timeline" data-height="600" href="https://twitter.com/lantas_ratu">Tweets by Lantas Ratu</a>
+            </div>
+          </div>
+          <div class="col-sm-16">
+            <div class="judul-feed text-center">
+              Info Cuaca
+            </div>
+            <div class="cuaca">
+              <a href="http://www.accuweather.com/id/id/sukabumi/202511/weather-forecast/202511" class="aw-widget-legal"></a>
+              <div id="awcc1484798037459" class="aw-widget-current"  data-locationkey="202511" data-unit="c" data-language="id" data-useip="false" data-uid="awcc1484798037459"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+            </div>
+          </div>
+          <div class="col-sm-16">
+            <p style="text-align: center;"><iframe src="https://time.wf/widget.php" scrolling="no" frameborder="0" width="110" height="45"></iframe><br><iframe src="https://www.jadwalsholat.org/adzan/ajax.row.php?id=308" frameborder="0" width="220" height="220"></iframe><a href="https://www.jadwalsholat.org" target="_blank"><img class="aligncenter" style="text-align: center;" alt="jadwal-sholat" src="https://www.jadwalsholat.org/wp-content/uploads/2013/09/jadwal-sholat.png" width="81" height="18" /></a></p>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <!-- Science & Travel start -->
+          <div class="col-sm-16">
+            <div class="row">
+              <div class="col-xs-16 col-sm-5">
+                <div class="row">
+                  <div class="topic col-sm-16">
+                    <a href="#">
+                      <div class="kanal-title-home">Sigap Sosial</div>
+                      <img class=" img-thumbnail"  src="/assets/images/article/polisi.png" width="600" height="227" alt=""/>
+                      <h3> Tim cyber gagalkan tauran sukabumi</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="col-sm-16">
+                    <ul class="list-unstyled  top-bordered ex-top-padding">
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-16 col-sm-5">
+                <div class="row">
+                  <div class="topic col-sm-16">
+                    <a href="#">
+                      <div class="kanal-title-home">Info wisata & Kuliner</div>
+                      <img class=" img-thumbnail"  src="/assets/images/article/polisi.png" width="600" height="227" alt=""/>
+                      <h3> Tim cyber gagalkan tauran sukabumi</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="col-sm-16">
+                    <ul class="list-unstyled  top-bordered ex-top-padding">
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-16 col-sm-5">
+                <div class="row">
+                  <div class="topic col-sm-16">
+                    <a href="#">
+                      <div class="kanal-title-home">Sigap Sosial</div>
+                      <img class=" img-thumbnail"  src="/assets/images/article/polisi.png" width="600" height="227" alt=""/>
+                      <h3> Tim cyber gagalkan tauran sukabumi</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="col-sm-16">
+                    <ul class="list-unstyled  top-bordered ex-top-padding">
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li> <a href="#">
+                        <div class="row">
+                          <div class="col-lg-13 col-md-16">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <!-- Scince & Travel end -->
       </div>
       <!-- end of content -->
     </div>
@@ -311,8 +483,7 @@
 <!-- go to top -->
 <script src="/assets/js/jquery.scrollUp.js"></script>
 <!-- scroll bar -->
-<script src="/assets/js/jquery.nicescroll.js"></script>
-<script src="/assets/js/jquery.nicescroll.plus.js"></script>
+
 <!--masonry-->
 <script src="/assets/js/masonry.pkgd.js"></script>
 <!--media queries to js-->
