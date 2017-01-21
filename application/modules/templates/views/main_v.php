@@ -29,11 +29,11 @@
     <!-- header start -->
     <div class="container header">
       <div class="row">
-        <div class="col-md-6">
-          <img src="/assets/images/logo/sigap95.png" class="img-responsive" />
+        <div class="col-md-4" style="margin-top : 10px;">
+          <img src="/assets/images/logo/sigap-95-small2.png" class="img-responsive center-block" width="150"/>
         </div>
-        <div class="col-md-10">
-          <img src="/assets/images/iklan/leaderboard.png" class="img-responsive" alt=""/>
+        <div class="col-md-12">
+          <img src="/assets/images/iklan/leaderboard.png" class="img-responsive" alt="" width="100%"/>
         </div>
       </div>
     </div>
@@ -253,7 +253,10 @@
                 </div>
                 </div>
                 <div class="col-sm-16">
-                  <div class="embed-responsive embed-responsive-16by9">
+                  <div class="judul-feed text-center">
+                    Berita Video
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9 news-video">
                     <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/p8MXblaRl5k?autoplay=0&origin=http://sigap95.dev" frameborder="0"></iframe>
                   </div>
                 </div>
