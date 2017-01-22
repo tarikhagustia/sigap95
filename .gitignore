@@ -2,3 +2,5 @@ assets/img/product/*
 assets/img/ads/*
 assets/images/ads/*
 assets/img/iklan/*
+assets/images/news/*
+!assets/images/news/index.html

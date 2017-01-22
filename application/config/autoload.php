@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('session', 'database');
 
 /*
 | -------------------------------------------------------------------
@@ -103,7 +103,7 @@ $autoload['helper'] = array('url','form', 'header');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array('facebook', 'header');
+$autoload['config'] = array('facebook', 'header', 'allblue');
 
 /*
 | -------------------------------------------------------------------
