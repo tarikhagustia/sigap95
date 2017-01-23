@@ -19,5 +19,10 @@ class Admin_dashboard extends AdminController
     $data['content'] = 'admin_dashboard/blank_v';
     $this->templates->get_admin_templates($data);
   }
+  public function default_page()
+  {
+    $data['content'] = 'admin_dashboard/default_v';
+    $this->templates->get_admin_templates($data);
+  }
 }
  ?>

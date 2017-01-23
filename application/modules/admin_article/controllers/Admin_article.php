@@ -3,7 +3,7 @@ class Admin_article extends AdminController {
   public function __construct()
   {
     parent::__construct();
-    $this->load->library(['format']);
+    $this->load->library(['format', 'slim']);
   }
   public function new_article()
   {
@@ -12,19 +12,38 @@ class Admin_article extends AdminController {
   }
   public function save_article()
   {
-    echo "<pre>";
-    print_r($_POST);
-    echo "</pre>";
-    $data = [
-      'article_url' => $this->format->seoUrl($this->input->post('article_name')),
-      'article_name' => $this->input->post('article_name'),
-      'created_at' => date('Y-m-d H:i:s'),
-      'article_category' => $this->input->post('article_category'),
-      'article_desc' => $this->input->post('article_desc')
-    ];
-    $this->db->insert('article', $data);
-    $this->session->set_flashdata('success', 'Berhasil menambahkan Artikel baru');
-    redirect('myadmin/article/list');
+    $images = Slim::getImages();
+    if ($images == false) {
+        show_404();
+    } else {
+        foreach ($images as $image) {
+            $file = Slim::saveFile($image['output']['data'], $this->format->url_dash($image['input']['name']) , 'assets/images/news/');
+        }
+        $news_thumb = $file['path'];
+        $data = [
+          'article_url' => $this->format->seoUrl($this->input->post('article_name')),
+          'article_name' => $this->input->post('article_name'),
+          'article_image_caption' => $this->input->post('article_caption'),
+          'author_name' => $this->input->post('author_name'),
+          'article_summary' => $this->input->post('article_summary'),
+          'created_at' => date('Y-m-d H:i:s'),
+          'article_type' => "article",
+          'article_image' => $news_thumb,
+          'article_desc' => $this->input->post('article_desc')
+        ];
+        $this->db->insert('article', $data);
+        $id = $this->db->insert_id();
+        /* Insert to canals */
+        foreach ($this->input->post('kanals') as $key => $value) {
+          $batch[] = [
+            'article_id' => $id,
+            'category_id' => $value
+          ];
+        }
+        $this->db->insert_batch('canal', $batch);
+        $this->session->set_flashdata('success', 'Berhasil menambahkan Artikel baru');
+        redirect('myadmin/article/list');
+    }
   }
   public function list()
   {
@@ -35,6 +54,9 @@ class Admin_article extends AdminController {
   }
   public function hapus($article_id)
   {
+    $this->load->helper('file');
+    $data = $this->db->get_where('article', ['article_id' => $article_id])->row();
+    unlink("./".$data->article_image);
     $this->db->delete('article' , ['article_id' => $article_id]);
     $this->session->set_flashdata('success', 'Berhasil menghapus data');
     redirect('myadmin/article/list');
@@ -48,15 +70,39 @@ class Admin_article extends AdminController {
 
   public function edit_save()
   {
-    $data = [
-      'article_url' => $this->format->seoUrl($this->input->post('article_name')),
-      'article_id' => $this->input->post('article_id'),
-      'article_name' => $this->input->post('article_name'),
-      'article_category' => $this->input->post('article_category'),
-      'article_desc' => $this->input->post('article_desc')
-    ];
-    $this->db->replace('article', $data);
-    $this->session->set_flashdata('success' , 'Sukses merubah artikel');
-    redirect('myadmin/article/list');
+    $images = Slim::getImages();
+    if ($images == false) {
+        show_404();
+    } else {
+        foreach ($images as $image) {
+            $file = Slim::saveFile($image['output']['data'], $this->format->url_dash($image['input']['name']) , 'assets/images/news/');
+        }
+        $news_thumb = $file['path'];
+        $data = [
+          'article_url' => $this->format->seoUrl($this->input->post('article_name')),
+          'article_name' => $this->input->post('article_name'),
+          'article_image_caption' => $this->input->post('article_caption'),
+          'author_name' => $this->input->post('author_name'),
+          'article_summary' => $this->input->post('article_summary'),
+          'created_at' => date('Y-m-d H:i:s'),
+          'article_type' => "article",
+          'article_image' => $news_thumb,
+          'article_desc' => $this->input->post('article_desc')
+        ];
+        $this->db->where('article_id' , $this->input->post('article_id'));
+        $this->db->update('article', $data);
+        $id = $this->input->post('article_id');
+        /* Insert to canals */
+        $this->db->query('DELETE FROM canal WHERE article_id = "'.$id.'"');
+        foreach ($this->input->post('kanals') as $key => $value) {
+          $batch = [
+            'article_id' => $id,
+            'category_id' => $value
+          ];
+          $this->db->insert('canal', $batch);
+        }
+        $this->session->set_flashdata('success', 'Berhasil menambahkan Artikel baru');
+        redirect('myadmin/article/list');
+    }
   }
 }

@@ -5,12 +5,13 @@
   </div>
   <div class="x_content">
     <?php echo modules::run('alert/show') ?>
-    <table class="table table-bordered table-hover">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
       <thead>
         <tr>
           <th>No</th>
           <th>Judul</th>
-          <th>Kategori</th>
+          <th>Redaksi</th>
           <th>Tanggal ditambah</th>
           <th>OPSI</th>
         </tr>
@@ -25,10 +26,10 @@
               <?php echo $value->article_name; ?>
             </td>
             <td>
-              <?php echo $value->article_category; ?>
+              <?php echo $value->author_name; ?>
             </td>
             <td>
-              <?php echo $value->updated_at; ?>
+              <?php echo $value->created_at; ?>
             </td>
             <td>
               <a href="<?php echo base_url('myadmin/article/edit/'. $value->article_id); ?>">Edit</a>
@@ -39,5 +40,6 @@
         <?php endforeach; ?>
       </tbody>
     </table>
+    </div>
   </div>
 </div>

@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['demo'] = 'maintenance/demo';
 
 /* =================== MYADMIN ========================= */
-$route['myadmin']['get'] = 'admin_dashboard/index';
+$route['myadmin']['get'] = 'admin_dashboard/default_page';
 $route['myadmin/signin']['get'] = 'auth/login';
 $route['myadmin/signin']['post'] = 'auth/login_do';
 $route['myadmin/materi']['get'] = 'admin_materi/view';

@@ -42,8 +42,9 @@ add_js(base_url('assets/js/article.js'));
           <div class="col-sm-6">
             <label for="article_category">Kategori</label>
             <select class="select2_multiple form-control" multiple="multiple" name="kanals[]">
-              <option value="0">satu</option>
-              <option value="1">dua</option>
+              <?php foreach (modules::run('category/get_category') as $key => $value): ?>
+                <option value="<?php echo $value->category_id; ?>" ><?= $value->category_name; ?></option>
+              <?php endforeach; ?>
             </select>
           </div>
           <div class="col-sm-6">
@@ -54,8 +55,12 @@ add_js(base_url('assets/js/article.js'));
 
       </div>
       <div class="form-group">
-        <label for="article_desc">Keterangan</label>
-        <textarea class="ckeditor form-control" name="article_desc" rows="6" id="editor1"><?php echo set_value('book_description') ?></textarea>
+        <label for="article_summary">Ringkasan</label>
+        <textarea class="form-control" name="article_summary" rows="6"><?php echo set_value('article_summary') ?></textarea>
+      </div>
+      <div class="form-group">
+        <label for="article_desc">Isi Berita</label>
+        <textarea class="ckeditor form-control" name="article_desc" rows="6" id="editor1"><?php echo set_value('article_desc') ?></textarea>
       </div>
       <button type="submit" name="button" class="btn btn-success">Simpan</button>
     </form>
