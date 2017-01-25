@@ -105,4 +105,22 @@ class Admin_article extends AdminController {
         redirect('myadmin/article/list');
     }
   }
+  public function get_artilce()
+  {
+    $judul  = $this->input->get('article_name');
+    $this->db->select('article_id, article_name');
+    $this->db->from('article');
+    $this->db->like('article_name', $judul, '%');
+    $this->db->order_by('article_name', 'ASC');
+    $get = $this->db->get();
+    // var_dump($get->result());
+    $article = [];
+    foreach ($get->result_array() as $key => $value) {
+      $article[$key]['article_id'] = $value['article_id'];
+      $article[$key]['article_name'] = $value['article_name'];
+    }
+    $this->output
+        ->set_content_type('application/json')
+        ->set_output(json_encode($article));
+  }
 }

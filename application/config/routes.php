@@ -84,3 +84,6 @@ $route['myadmin/article/list']['get'] = 'admin_article/list';
 $route['myadmin/article/delete/(:num)']['get'] = 'admin_article/hapus/$1';
 $route['myadmin/article/edit/(:num)']['get'] = 'admin_article/edit_view/$1';
 $route['myadmin/article/edit']['post'] = 'admin_article/edit_save';
+$route['myadmin/artiel/get']['get'] = 'admin_article/get_artilce';
+$route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
+$route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
