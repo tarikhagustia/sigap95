@@ -60,12 +60,12 @@ add_js(base_url('assets/js/article.js'));
       </div>
       <div class="form-group">
         <label for="article_desc">Isi Berita</label>
-        <textarea class="ckeditor form-control" name="article_desc" rows="6" id="editor1"><?php echo set_value('article_desc') ?></textarea>
+        <textarea class="custom-ck form-control" name="article_desc" rows="6" id="editorarticle"><?php echo set_value('article_desc') ?></textarea>
       </div>
       <button type="submit" name="button" class="btn btn-success">Simpan</button>
     </form>
   </div>
 </div>
 <script type="text/javascript">
-   CKEDITOR.replace( 'editor1' );
+  //  CKEDITOR.replace( 'editor1' );
 </script>
