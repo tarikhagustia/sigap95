@@ -4,3 +4,7 @@ assets/images/ads/*
 assets/img/iklan/*
 assets/images/news/*
 !assets/images/news/index.html
+source/*
+source/*.txt
+thumbs/*
+thumbs/*.txt
