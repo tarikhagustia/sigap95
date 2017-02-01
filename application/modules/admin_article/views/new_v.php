@@ -15,16 +15,31 @@ add_js(base_url('assets/js/article.js'));
     <?php echo form_open('myadmin/article/new'); ?>
     <div class="form-group">
       <div class="row">
+        <div class="col-sm-12">
+          <select class="form-control article-type" name="article_type">
+            <option value="article">Artikel</option>
+            <option value="video">Video</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
         <div class="col-sm-6">
-          <label class="control-label" for="">Photo</label>
-          <div class="">
+          <div class="" id="article-gambar">
+            <label class="control-label" for="">Photo</label>
             <div class="slim"
                data-label="Tarik gambar anda kesini"
                accept="image/jpeg"
                data-size="640,640"
                data-ratio="16:9">
-              <input type="file" name="slim[]" required />
+              <input type="file" name="slim[]"/>
             </div>
+          </div>
+          <div class="" id="youtube-link" hidden>
+            <label for="">Youtube Link</label>
+            <input type="text" name="article_video" class="form-control" value="npFAmRqHpQc">
+            <small>Masukan ID Youtube https://www.youtube.com/watch?v=<b>npFAmRqHpQc</b></small>
           </div>
         </div>
         <div class="col-sm-6">
