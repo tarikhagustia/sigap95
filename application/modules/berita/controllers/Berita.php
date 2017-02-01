@@ -26,7 +26,7 @@ class Berita extends BeritaController
       return $this->load->view('breaking_v', $data , true);
     else:
       $data['list'] = $this->berita_m->get_breaking($kanal);
-      return $this->load->view('breaking_kanal', $data , true);
+      return $this->load->view('breaking_v', $data , true);
     endif;
   }
   public function get_breaking_terkait()

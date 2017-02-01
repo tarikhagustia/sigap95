@@ -8,3 +8,4 @@ $config['vendor_default']  = 1234;
 $config['vendor_hash'] = $config['vendor_name'] . $config['vendor_url'] . $config['vendor_key'];
 $config['client_name'] = 'Sigap95';
 $config['client_url'] = 'sigap95.com';
+$config['fb_app_id'] = "167418833747986";

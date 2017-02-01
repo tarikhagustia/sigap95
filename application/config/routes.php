@@ -87,3 +87,14 @@ $route['myadmin/article/edit']['post'] = 'admin_article/edit_save';
 $route['myadmin/artiel/get']['get'] = 'admin_article/get_artilce';
 $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
+/*================ Kanal ======================== */
+$route['sigap-sosial']['get'] = 'kanal/show_kanal/sigap-sosial';
+$route['sigap-24']['get'] = 'kanal/show_kanal/sigap-24';
+$route['sigap-lantas']['get'] = 'kanal/show_kanal/sigap-lantas';
+$route['info-publik']['get'] = 'kanal/show_kanal/info-publik';
+$route['promotor']['get'] = 'kanal/show_kanal/promotor';
+$route['news-video']['get'] = 'kanal/show_kanal/news-video';
+$route['wisata-kuliner']['get'] = 'kanal/show_kanal/wisata-kuliner';
+
+/*================ Article ======================== */
+$route['news/read/(:any)\.html']['get'] = 'article/news_read/$1';

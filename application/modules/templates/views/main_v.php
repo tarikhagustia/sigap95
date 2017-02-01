@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sigap95.com - Home</title>
+<?= (isset($meta) ? meta_tags($meta) : meta_tags());?>
 <!-- bootstrap styles-->
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <!-- ionicons font -->
@@ -20,8 +20,12 @@
 <!-- magnific popup styles -->
 <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- add this -->
+
+
 </head>
 <body>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5890a068d67eeb24"></script>
 <!-- wrapper start -->
 <div class="wrapper">
   <!-- sticky header start -->
@@ -52,28 +56,28 @@
               <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav text-uppercase main-nav ">
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="#">Sigap 24 Jam</a>
+                    <a href="/sigap-24">Sigap 24 Jam</a>
                   </li>
                   <li>
-                    <a href="#">Sigap Sosial</a>
+                    <a href="/sigap-sosial">Sigap Sosial</a>
                   </li>
                   <li>
-                    <a href="#">Sigap Lantas</a>
+                    <a href="/sigap-lantas">Sigap Lantas</a>
                   </li>
                   <li>
-                    <a href="#">Info Publik</a>
+                    <a href="/info-publik">Info Publik</a>
                   </li>
                   <li>
-                    <a href="#">PROMOTER</a>
+                    <a href="/promotor">PROMOTER</a>
                   </li>
                   <li>
-                    <a href="#">News Video</a>
+                    <a href="/news-video">News Video</a>
                   </li>
                   <li>
-                    <a href="#">Info Wisata Kuliner</a>
+                    <a href="/wisata-kuliner">Info Wisata Kuliner</a>
                   </li>
                 </ul>
               </div>
@@ -164,6 +168,7 @@
 <script src="/assets/js/enquire.js"></script>
 <!--custom functions-->
 <script src="/assets/js/custom-fun.js"></script>
+<?php echo put_headers(); ?>
 </body>
 
 <!-- Mirrored from webyzona.com//templates/themeforest/globalnews/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jul 2015 14:04:41 GMT -->

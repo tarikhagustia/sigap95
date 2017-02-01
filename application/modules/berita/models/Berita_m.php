@@ -77,19 +77,14 @@ class Berita_m extends CI_Model
       $get = $this->db->get()->result();
       return $get;
     else:
-      $this->db->select('news_title, news_url, news_desc, category_alias, news_thumb, fn_news.news_id, news_timestamp, news_views')->from('fn_news_breaking')
-      ->join('fn_news', 'fn_news_breaking.news_id = fn_news.news_id')
-      ->join('fn_pages' , 'fn_pages.news_id = fn_news.news_id')
-      ->join('fn_category', 'fn_pages.category_id = fn_category.category_id')
-      // ->where('date_from <=', date('Y-m-d H:i:s'))
-      // ->where('date_to >=', date('Y-m-d H:i:s'))
-      ->where('fn_news_breaking.isActive', true)
-      ->where('fn_category.category_name', $kanal)
-      ->order_by('breaking_timestamp', 'DESC')
-      ->limit(1);
-      $get = $this->db->get()->row();
-      // var_dump($get);
-      // die();
+      $this->db->select('article_name, article_url, article_image, article.created_at, category.category_name')
+      ->from('breaking')
+      ->join('article', 'breaking.article_id = article.article_id')
+      ->join('canal' , 'canal.article_id = article.article_id', 'LEFT')
+      ->join('category', 'canal.category_id = category.category_id', 'LEFT')
+      ->where('category.category_url' , $kanal)
+      ->group_by('article.article_id');
+      $get = $this->db->get()->result();
       return $get;
     endif;
   }

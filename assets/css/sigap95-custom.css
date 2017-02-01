@@ -73,3 +73,32 @@ hr.footer-divided {
 .news-video {
 	border: solid red !important;
 }
+.judul {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	/*line-height: 5px;*/
+}
+.article.image-caption {
+	margin-top: 10px;
+	padding-left: 20px;
+	font-style: italic;
+}
+.article.images {
+	padding-bottom: 5px;
+}
+.article.article-content {
+	margin-top: 10px;
+	color: black !important;
+}
+h3.main-title-dash {
+    width: 100%;
+    color: #e74c3c;
+    text-align: left;
+    border-bottom: 1px solid #e74c3c;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h3.main-title-dash > span {
+	background-color: white;
+	padding: 10px;
+}
