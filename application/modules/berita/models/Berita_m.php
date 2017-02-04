@@ -11,7 +11,7 @@ class Berita_m extends CI_Model
   }
   public function get_feed($category_url)
   {
-    $this->db->select('article_url, article.article_id, category.category_id, article_name, article_image, article.created_at, article_view , article_summary');
+    $this->db->select('article_url, article.article_id, category.category_id, article_name, article_image_thumb, article.created_at, article_view , article_summary');
     $this->db->from('article');
     $this->db->join('canal', 'article.article_id = canal.article_id');
     $this->db->join('category', 'canal.category_id = category.category_id');
@@ -26,7 +26,7 @@ class Berita_m extends CI_Model
   }
   public function get_popular($kanal)
   {
-    $this->db->select('article_url, article.article_id, category.category_id, article_name, article_image, article.created_at, article_view , article_summary');
+    $this->db->select('article_url, article.article_id, category.category_id, article_name, article_image_thumb, article.created_at, article_view , article_summary');
     $this->db->from('article');
     $this->db->join('canal', 'article.article_id = canal.article_id');
     $this->db->join('category', 'canal.category_id = category.category_id');

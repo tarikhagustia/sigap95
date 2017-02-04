@@ -13,7 +13,7 @@ class Admin_category extends AdminController
     $data['list'] = $this->category_m->get_categories();
     $this->templates->get_admin_templates($data);
   }
-  public function new()
+  public function new_()
   {
     $data['content'] = 'admin_category/category_new';
     $data['list'] = $this->category_m->get_categories();

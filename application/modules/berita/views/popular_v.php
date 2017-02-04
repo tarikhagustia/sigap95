@@ -4,7 +4,7 @@
       <a href="<?php echo link_article($value->article_url) ?>">
         <div class="row">
           <div class="col-sm-6">
-            <img alt="<?= $value->article_name ?>" src="<?php echo base_url($value->article_image) ?>" class="img-thumbnail pull-left" height="100" width="120" >
+            <img alt="<?= $value->article_name ?>" src="<?php echo base_url($value->article_image_thumb) ?>" class="img-thumbnail pull-left" height="100" width="120" >
           </div>
           <div class="col-sm-10">
              <h4><?php echo $value->article_name ?></h4>
