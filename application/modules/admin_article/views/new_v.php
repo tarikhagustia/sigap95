@@ -1,8 +1,11 @@
 <?php
+add_js(base_url('assets/vendors/fancybox/jquery.fancybox.js'));
+add_js(base_url('assets/vendors/fancybox/jquery.fancybox.pack.js'));
 add_js(base_url('assets/js/slim-image/slim/slim.kickstart.min.js'));
 add_js(base_url('assets/vendors/select2/dist/js/select2.full.min.js'));
 add_js(base_url('assets/js/article.js'));
 ?>
+<link rel="stylesheet" href="/assets/vendors/fancybox/jquery.fancybox.css" media="screen" title="no title" charset="utf-8">
 <link href="<?php echo base_url()?>assets/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
 <link href="<?php echo base_url() ?>assets/js/slim-image/slim/slim.min.css" rel="stylesheet">
 <div class="x_panel"W>
@@ -11,6 +14,8 @@ add_js(base_url('assets/js/article.js'));
     <div class="clearfix"></div>
   </div>
   <div class="x_content">
+    <!-- <input id="image_link" name="link" type="text" value="">
+    <a href="/filemanager/dialog.php?type=1&field_id=image_link" class="btn iframe-btn" type="button">Open Filemanager</a> -->
     <?php echo modules::run('alert/show') ?>
     <?php echo form_open('myadmin/article/new'); ?>
     <div class="form-group">

@@ -141,5 +141,20 @@ class Berita_m extends CI_Model
     $get = $this->db->get()->result();
     return $get;
   }
+  public function get_featured_video($kanal)
+  {
+    $this->db->select('article_video, article_url, article.article_id, category.category_id, article_name, article_image, article.created_at, article_view , article_summary, category_name');
+    $this->db->from('featured_video');
+    $this->db->join('article', 'article.article_id = featured_video.article_id');
+    $this->db->join('canal', 'article.article_id = canal.article_id');
+    $this->db->join('category', 'canal.category_id = category.category_id');
+    if ($kanal == null) {
+      $this->db->where('featured_video.category_id', $kanal);
+    }else{
+      $this->db->where('category.category_url', $kanal);
+    }
+    $get = $this->db->get()->row();
+    return $get;
+  }
 }
  ?>

@@ -84,9 +84,11 @@ $route['myadmin/article/list']['get'] = 'admin_article/list';
 $route['myadmin/article/delete/(:num)']['get'] = 'admin_article/hapus/$1';
 $route['myadmin/article/edit/(:num)']['get'] = 'admin_article/edit_view/$1';
 $route['myadmin/article/edit']['post'] = 'admin_article/edit_save';
-$route['myadmin/artiel/get']['get'] = 'admin_article/get_artilce';
+$route['myadmin/artiel/get(:any)']['get'] = 'admin_article/get_artilce/$1';
 $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
+$route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
+$route['myadmin/featured/home/video']['post'] = 'admin_featured/simpan';
 /*================ Kanal ======================== */
 $route['sigap-sosial']['get'] = 'kanal/show_kanal/sigap-sosial';
 $route['sigap-24']['get'] = 'kanal/show_kanal/sigap-24';

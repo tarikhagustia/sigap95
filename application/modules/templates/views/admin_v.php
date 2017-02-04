@@ -62,6 +62,11 @@
                       <li><a href="<?php echo base_url('myadmin/headline/home') ?>"> Headline Awal </a></li>
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-home"></i> Home Content Management <span class="fa fa-user"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?php echo base_url('myadmin/featured/home/video') ?>"> News Video </a></li>
+                    </ul>
+                  </li>
                   <li><a><i class="fa fa-home"></i> Kanal <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo base_url('myadmin/category') ?>"> Atur Kanal </a></li>

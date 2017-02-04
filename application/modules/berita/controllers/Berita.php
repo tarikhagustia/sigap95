@@ -81,5 +81,10 @@ class Berita extends BeritaController
     }
     return $this->load->view('canal_footer_v', ['article' => $first], true);
   }
+  public function get_featured_video($kanal = null)
+  {
+    $data['article'] = $this->berita_m->get_featured_video($kanal);
+    return $this->load->view('featured_video_v', $data, true);
+  }
 }
  ?>

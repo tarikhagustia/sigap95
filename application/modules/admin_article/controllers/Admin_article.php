@@ -105,11 +105,12 @@ class Admin_article extends AdminController {
         redirect('myadmin/article/list');
     }
   }
-  public function get_artilce()
+  public function get_artilce($type = 'article')
   {
     $judul  = $this->input->get('article_name');
     $this->db->select('article_id, article_name');
     $this->db->from('article');
+    $this->db->where('article_type' , $type);
     $this->db->like('article_name', $judul, '%');
     $this->db->order_by('article_name', 'ASC');
     $get = $this->db->get();

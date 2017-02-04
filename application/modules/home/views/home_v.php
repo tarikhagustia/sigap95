@@ -37,9 +37,9 @@
               <div class="judul-feed text-center">
                 Berita Video
               </div>
-              <div class="embed-responsive embed-responsive-16by9 news-video">
-                <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/p8MXblaRl5k?autoplay=0&origin=http://sigap95.dev" frameborder="0"></iframe>
-              </div>
+              <!-- start berita video -->
+              <?php echo modules::run('berita/get_featured_video') ?>
+              <!-- end berita video -->
             </div>
           </div>
         </div>
