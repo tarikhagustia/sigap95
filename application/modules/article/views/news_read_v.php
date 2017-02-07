@@ -20,9 +20,15 @@
               <div class="addthis_inline_share_toolbox"></div>
             </div>
           </div>
-          <div class="article images">
-            <img class="img-responsive" src="<?= base_url($article->article_image) ?>" />
-          </div>
+          <?php if ($article->article_type == "article"): ?>
+            <div class="article images">
+              <img class="img-responsive" src="<?= base_url($article->article_image) ?>" />
+            </div>
+          <?php else: ?>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<?= $article->article_video ?>"></iframe>
+            </div>
+          <?php endif; ?>
           <span class="article image-caption"><?= $article->article_image_caption ?></span>
           <div class="article article-content">
             <?php echo $article->article_desc; ?>
