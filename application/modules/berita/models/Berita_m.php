@@ -129,7 +129,7 @@ class Berita_m extends CI_Model
   }
   public function get_footer_canal($canal)
   {
-    $this->db->select('article_url, article.article_id, category.category_id, article_name, article_image, article.created_at, article_view , article_summary, category_name');
+    $this->db->select('article_image_thumb, article_url, article.article_id, category.category_id, article_name, article_image, article.created_at, article_view , article_summary, category_name');
     $this->db->from('article');
     $this->db->join('canal', 'article.article_id = canal.article_id');
     $this->db->join('category', 'canal.category_id = category.category_id');

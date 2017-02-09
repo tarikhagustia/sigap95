@@ -3,7 +3,7 @@
   <div class="col-sm-11">
     <div class="panel panel-info">
       <div class="panel-body">
-        <img src="https://newopenx.detik.com/images/56683473e5e8fc2dd440abaab3f5265c.gif" class="img-responsive" alt="" />
+        <img src="https://newopenx.detik.com/images/56683473e5e8fc2dd440abaab3f5265c.gif" class="img-responsive" style="width: 100%" alt="" />
         <article>
           <div class="judul">
             <div class="article date">
@@ -22,7 +22,7 @@
           </div>
           <?php if ($article->article_type == "article"): ?>
             <div class="article images">
-              <img class="img-responsive" src="<?= base_url($article->article_image) ?>" />
+              <img class="img-responsive" src="<?= base_url($article->article_image) ?>"  style="width: 100%" />
             </div>
           <?php else: ?>
             <div class="embed-responsive embed-responsive-16by9">

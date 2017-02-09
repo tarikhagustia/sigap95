@@ -17,21 +17,36 @@ add_js(base_url('assets/js/article.js'));
     ?>
     <div class="form-group">
       <div class="row">
+        <div class="col-sm-12">
+          <select class="form-control article-type" name="article_type" readonly>
+            <option value="article" <?= ($article->article_type == "article") ? "selected" : ""; ?>>Artikel</option>
+            <option value="video" <?= ($article->article_type == "video") ? "selected" : ""; ?>>Video</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
         <div class="col-sm-6">
-          <label class="control-label" for="">Photo</label>
-          <div class="">
+          <label class="control-label" for=""><?= ($article->article_type == "video") ? "" : "Photo"; ?></label>
+          <div class="" <?= ($article->article_type == "video") ? "hidden" : ""; ?>>
             <div class="slim"
                data-label="Tarik gambar anda kesini"
                accept="image/jpeg"
                data-size="640,640"
                data-ratio="16:9">
                <img src="<?php echo base_url($article->article_image) ?>"/>
-              <input type="file" name="slim[]" required />
+              <input type="file" name="slim[]" <?= ($article->article_type == "video") ? "" : "required"; ?> />
             </div>
+          </div>
+          <div class="" id="youtube-link" <?= ($article->article_type == "video") ? "" : "hidden"; ?>>
+            <label for="">Youtube Link</label>
+            <input type="text" name="article_video" class="form-control" value="<?php echo explode('https://www.youtube.com/embed/' , str_replace(' ' , '' , str_replace(' ', '', $article->article_video)))[1]; ?> ">
+            <small>Masukan ID Youtube https://www.youtube.com/watch?v=<b>npFAmRqHpQc</b></small>
           </div>
         </div>
         <div class="col-sm-6">
-            <label class="control-label" for="article_caption-name">Caption Gambar</label>
+            <label class="control-label" for="article_caption-name">Caption <?= ($article->article_type == "video") ? "Video" : "Gambar"; ?></label>
             <textarea name="article_caption" id="article_caption" class="form-control"><?php echo $article->article_image_caption ?></textarea>
         </div>
       </div>

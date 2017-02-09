@@ -15,7 +15,7 @@ class Admin_article extends AdminController {
     $images = Slim::getImages();
     if ($images == false) {
       // Videos
-      $url = "https://img.youtube.com/vi/".$this->input->post('article_video')."/default.jpg";
+      $url = "https://img.youtube.com/vi/".$this->input->post('article_video')."/mqdefault.jpg";
       $upload_dir = "assets/images/news/".$this->input->post('article_video') . ".jpg";
       file_put_contents($upload_dir, file_get_contents($url));
       $yt_embed = "https://www.youtube.com/embed/" . $this->input->post('article_video');
@@ -89,7 +89,9 @@ class Admin_article extends AdminController {
   }
   public function list_()
   {
-    $materis = $this->db->get('article')->result();
+    $materis = $this->db->select('*')->from('article')
+    ->order_by('created_at' , 'desc')
+    ->get()->result();
     $data['materis'] = $materis;
     $data['content'] = 'admin_article/list_v';
     $this->templates->get_admin_templates($data);
@@ -114,7 +116,39 @@ class Admin_article extends AdminController {
   {
     $images = Slim::getImages();
     if ($images == false) {
-        show_404();
+      $url = "https://img.youtube.com/vi/".$this->input->post('article_video')."/mqdefault.jpg";
+      $url = str_replace(' /' , '/' , $url);
+      $upload_dir = "assets/images/news/".$this->input->post('article_video') . ".jpg";
+      file_put_contents($upload_dir, file_get_contents($url));
+      $yt_embed = "https://www.youtube.com/embed/" . $this->input->post('article_video');
+      $data = [
+        'article_url' => $this->format->seoUrl($this->input->post('article_name')),
+        'article_name' => $this->input->post('article_name'),
+        'article_image_caption' => $this->input->post('article_caption'),
+        'author_name' => $this->input->post('author_name'),
+        'article_summary' => $this->input->post('article_summary'),
+        'created_at' => date('Y-m-d H:i:s'),
+        'article_type' => "video",
+        'article_image_thumb' => $upload_dir,
+        'article_video' => $yt_embed,
+        'article_desc' => $this->input->post('article_desc')
+      ];
+      $this->db->where('article_id' , $this->input->post('article_id'));
+      $this->db->update('article', $data);
+      $id = $this->input->post('article_id');
+      /* Insert to canals */
+      $this->db->query('DELETE FROM canal WHERE article_id = "'.$id.'"');
+      /* Insert to canals */
+      foreach ($this->input->post('kanals') as $key => $value) {
+        $batch[] = [
+          'article_id' => $id,
+          'category_id' => $value
+        ];
+      }
+      $this->db->insert_batch('canal', $batch);
+      $this->session->set_flashdata('success', 'Berhasil Menyimpan perubahan');
+      redirect('myadmin/article/list');
+
     } else {
         foreach ($images as $image) {
             $file = Slim::saveFile($image['output']['data'], $this->format->url_dash($image['input']['name']) , 'assets/images/news/');

@@ -38,6 +38,8 @@ class Article extends UserController
     $data['article'] = $this->article_m->get_article($article_url);
     $data['page_title'] = 'Artikel';
     $data['meta']['title'] = $data['article']->article_name;
+    $data['meta']['image'] = ($data['article']->article_type == "article") ? $data['article']->article_image : $data['article']->article_image_thumb;
+    $data['meta']['keywords'] = str_replace(' ' , ', ', $data['article']->article_name);
     $data['meta']['desc'] = $data['article']->article_summary;
     $data['content'] = 'article/news_read_v';
     $this->templates->get_news_templates($data);
