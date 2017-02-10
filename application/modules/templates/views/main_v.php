@@ -37,7 +37,8 @@
           <img src="/assets/images/logo/sigap-95-small2.png" class="img-responsive center-block" width="150"/>
         </div>
         <div class="col-md-12">
-          <img src="/assets/images/iklan/leaderboard.png" class="img-responsive" alt="" width="100%"/>
+          <!-- <img src="/assets/images/iklan/leaderboard.png" class="img-responsive" alt="" width="100%"/> -->
+          <?php echo modules::run('ads/get_leaderboard', $kanal); ?>
         </div>
       </div>
     </div>

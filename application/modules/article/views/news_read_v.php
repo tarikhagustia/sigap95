@@ -13,7 +13,7 @@
                 <?= $article->article_name ?>
             </h1>
             <div class="article author">
-              <?= $article->author_name ?>
+              Oleh : <?= $article->author_name ?>
             </div>
             <br>
             <div class="bukan-iklan">

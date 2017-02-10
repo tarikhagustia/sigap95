@@ -89,6 +89,8 @@ $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
 $route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
 $route['myadmin/featured/home/video']['post'] = 'admin_featured/simpan';
+$route['myadmin/ads/leaderboard']['get'] = 'admin_ads/leaderboard';
+$route['myadmin/ads/leaderboard']['post'] = 'admin_ads/leaderboard_post';
 /*================ Kanal ======================== */
 $route['sigap-sosial']['get'] = 'kanal/show_kanal/sigap-sosial';
 $route['sigap-24']['get'] = 'kanal/show_kanal/sigap-24';

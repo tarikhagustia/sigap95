@@ -14,8 +14,8 @@ add_js(base_url('assets/js/article.js'));
     <div class="clearfix"></div>
   </div>
   <div class="x_content">
-    <!-- <input id="image_link" name="link" type="text" value="">
-    <a href="/filemanager/dialog.php?type=1&field_id=image_link" class="btn iframe-btn" type="button">Open Filemanager</a> -->
+    <input id="image_link" name="link" type="text" value="">
+    <a href="/filemanager/dialog.php?type=1&field_id=image_link" class="btn iframe-btn" type="button">Open Filemanager</a>
     <?php echo modules::run('alert/show') ?>
     <?php echo form_open('myadmin/article/new'); ?>
     <div class="form-group">
