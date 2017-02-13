@@ -6,7 +6,8 @@
     <!-- breaking news -->
     <div class="row">
         <div class="col-sm-8">
-          <img src="/assets/images/iklan/439x227.png" class="img-responsive">
+          <!-- <img src="/assets/images/iklan/439x227.png" class="img-responsive"> -->
+          <?php echo modules::run('ads/get_haa'); ?>
           <img src="/assets/images/iklan/pomoter.png" class="img-responsive">
           <hr />
           <div class="judul-konten pull-left">Popular news</div>

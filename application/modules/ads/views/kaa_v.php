@@ -1,3 +1,5 @@
-<a href="<?= $link ?>" target="_blank">
-  <img src="<?php echo base_url($layout_dir) ?>" class="img-responsive" width="100%" alt="<?= $alt ?>"/>
-</a>
+<?php if (!empty($ads_image) || $ads_image != ""): ?>
+  <a href="<?= $ads_link ?>" target="_blank">
+    <img src="<?php echo $ads_image ?>" class="img-responsive" width="100%" alt="<?= $ads_alt ?>"/>
+  </a>
+<?php endif; ?>

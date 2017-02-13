@@ -81,6 +81,9 @@
                   <li><a><i class="fa fa-home"></i> Management Iklan <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo base_url('myadmin/ads/leaderboard') ?>"> Leaderboard </a></li>
+                      <li><a href="<?php echo base_url('myadmin/ads/home') ?>"> Iklan Halaman awal </a></li>
+                      <li><a href="<?php echo base_url('myadmin/ads/kanal') ?>"> Iklan Kanal </a></li>
+                      <li><a href="<?php echo base_url('myadmin/ads/article') ?>"> Iklan Artikel </a></li>
                     </ul>
                   </li>
                 </ul>

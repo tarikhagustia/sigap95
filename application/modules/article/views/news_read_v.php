@@ -3,7 +3,8 @@
   <div class="col-sm-11">
     <div class="panel panel-info">
       <div class="panel-body">
-        <img src="https://newopenx.detik.com/images/56683473e5e8fc2dd440abaab3f5265c.gif" class="img-responsive" style="width: 100%" alt="" />
+        <!-- <img src="https://newopenx.detik.com/images/56683473e5e8fc2dd440abaab3f5265c.gif" class="img-responsive" style="width: 100%" alt="" /> -->
+        <?php echo modules::run('ads/get_aal' , $article->article_id); ?>
         <article>
           <div class="judul">
             <div class="article date">
@@ -85,7 +86,7 @@
         </div>
       </div>
       <div class="col-sm-16">
-        <img src="https://dummyimage.com/380x250/000/fff&text=Ads+Space+380x250" class="img-responsive" alt="" />
+        
       </div>
     </div>
   </div>

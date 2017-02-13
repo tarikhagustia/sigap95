@@ -84,13 +84,20 @@ $route['myadmin/article/list']['get'] = 'admin_article/list_';
 $route['myadmin/article/delete/(:num)']['get'] = 'admin_article/hapus/$1';
 $route['myadmin/article/edit/(:num)']['get'] = 'admin_article/edit_view/$1';
 $route['myadmin/article/edit']['post'] = 'admin_article/edit_save';
-$route['myadmin/artiel/get(:any)']['get'] = 'admin_article/get_artilce/$1';
+$route['myadmin/article/get/(:any)']['get'] = 'admin_article/get_artilce/$1';
 $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
 $route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
 $route['myadmin/featured/home/video']['post'] = 'admin_featured/simpan';
 $route['myadmin/ads/leaderboard']['get'] = 'admin_ads/leaderboard';
 $route['myadmin/ads/leaderboard']['post'] = 'admin_ads/leaderboard_post';
+$route['myadmin/ads/home']['get'] = 'admin_ads/home_ads';
+$route['myadmin/ads/home']['post'] = 'admin_ads/home_ads_post';
+$route['myadmin/ads/kanal']['get'] = 'admin_ads/kanal_ads';
+$route['myadmin/ads/kanal']['post'] = 'admin_ads/kanal_post';
+$route['myadmin/ads/article']['get'] = 'admin_ads/article_ads';
+$route['myadmin/ads/article']['post'] = 'admin_ads/article_ads_post';
+
 /*================ Kanal ======================== */
 $route['sigap-sosial']['get'] = 'kanal/show_kanal/sigap-sosial';
 $route['sigap-24']['get'] = 'kanal/show_kanal/sigap-24';

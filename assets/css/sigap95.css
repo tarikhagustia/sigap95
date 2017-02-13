@@ -214,8 +214,8 @@ a:hover, a:focus {
 	outline: none;
 }
 a:hover img {
-	border: 1px solid #ffcfca;
-	opacity: 0.6;
+	/*border: 1px solid #ffcfca;
+	opacity: 0.6;*/
 }
 p {
 	color: #8d9aa5;

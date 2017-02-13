@@ -11,7 +11,7 @@ class Ads_m extends CI_Model
   }
   public function get_haa()
   {
-    $query = $this->db->get_where('fn_layout', ['layout_name' => 'HAA']);
+    $query = $this->db->get_where('ads', ['ads_name' => 'HAA']);
     return $query;
   }
   public function get_hab()
@@ -21,13 +21,23 @@ class Ads_m extends CI_Model
   }
   public function get_kaa($kanal)
   {
-    $query = $this->db->get_where('fn_layout', ['layout_name' => 'KAA', 'layout_location' => $kanal]);
+    $query = $this->db->get_where('ads', ['ads_name' => 'KAA', 'ads_location' => $kanal]);
+    return $query->row();
+  }
+  public function get_kab($kanal)
+  {
+    $query = $this->db->get_where('ads', ['ads_name' => 'KAB', 'ads_location' => $kanal]);
     return $query->row();
   }
   public function get_nf($type)
   {
     $query = $this->db->get_where('fn_layout', ['layout_name' => $type]);
     return $query->row();
+  }
+  public function get_aal($article_name)
+  {
+    $data = $this->db->get_where('ads_article' , ['article_id' => $article_name]);
+    return $data->result();
   }
 }
  ?>

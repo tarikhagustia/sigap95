@@ -35,6 +35,7 @@ class Article extends UserController
   public function news_read($article_url)
   {
     add_js(base_url('assets/js/fb.js'));
+    $data['kanal'] = "home";
     $data['article'] = $this->article_m->get_article($article_url);
     $data['page_title'] = 'Artikel';
     $data['meta']['title'] = $data['article']->article_name;
